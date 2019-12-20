@@ -1,0 +1,33 @@
+.pet {
+  display: flex;
+  margin: 24px 0;
+  &__avator {
+    margin: 0 20px 0 0;
+    img {
+      display: block;
+      width: 80px;
+    }
+  }
+  &__body {
+    flex: 1;
+  }
+  &__name {
+    font-weight: bold;
+    color: #797979;
+    line-height: 1;
+    font-size: 18px;
+    margin-bottom: 8px;
+    small {
+      font-weight: normal;
+      font-style: 12px;
+    }
+  }
+  &__exp-bar {
+    margin-bottom: 10px;
+  }
+  &__exp {
+    color: rgba(black, .38);
+    font-style: 12px;
+    line-height: 1;
+  }
+}

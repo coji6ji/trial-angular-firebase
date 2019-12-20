@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pet } from 'src/app/interface/pet';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  pet: Pet = {
+    id: 'aaaa',
+    name: 'test',
+    exp: 40,
+    level: 4,
+    avatorURL: '/assets/images/pet-1.png'
+  };
 
   constructor() { }
 
