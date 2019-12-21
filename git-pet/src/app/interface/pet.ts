@@ -1,7 +1,8 @@
 export interface Pet {
-  id: string;
   name: string;
-  avatorURL: string;
+  petImageId: number;
   level: number;
   exp: number;
+  tranerId: string;
+  gender: 'male' | 'female';
 }
