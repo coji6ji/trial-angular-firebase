@@ -1,4 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-style: 14px;
+}
+
+.container {
+  padding: 24px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.pager {
+  text-align: center;
+  span {
+    margin: 0 4px;
+  }
+}
+
+footer {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(black, .12);
+  text-align: center;
+}
