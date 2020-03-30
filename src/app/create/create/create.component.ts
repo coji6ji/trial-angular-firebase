@@ -3,7 +3,7 @@ import { FormBuilder, Validators, FormControl } from '@angular/forms';
 import { ClassGetter } from '@angular/compiler/src/output/output_ast';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { PetService } from 'src/app/services/pet.service';
-import { AuthService } from 'src/app/sevices/auth.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-create',

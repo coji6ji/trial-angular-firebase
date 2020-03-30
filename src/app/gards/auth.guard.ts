@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, CanLoad, Route, UrlSegment, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { AuthService } from '../sevices/auth.service';
+import { AuthService } from '../services/auth.service';
 import { map, take, tap } from 'rxjs/operators';
 
 @Injectable({
@@ -19,9 +19,6 @@ export class AuthGuard implements CanActivate, CanLoad {
     return this.authService.afUser$.pipe(
       map(user => !!user),
       tap(isInLogin => {
-
-        console.log('isInLogin => ' + isInLogin);
-
         if (!isInLogin) {
           this.router.navigateByUrl('/welcome');
         }

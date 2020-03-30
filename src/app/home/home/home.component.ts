@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Pet } from 'src/app/interface/pet';
 import { PetService } from 'src/app/services/pet.service';
-import { AuthService } from 'src/app/sevices/auth.service';
+import { AuthService } from 'src/app/services/auth.service';
 import { Observable } from 'rxjs';
 
 @Component({
